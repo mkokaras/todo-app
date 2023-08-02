@@ -1,0 +1,55 @@
+input[type="checkbox"] {
+  //1. Hide the input
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-color: transparent;
+
+  margin: 0;
+
+  //  2. Custom unchecked
+  font: inherit;
+  color: $clr-grey-light-3-l;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid $clr-grey-light-3-l;
+  transform: translateY(-0.075em);
+  border-radius: 50%;
+  transition: 0.2s all;
+
+  @media (min-width: $bp-tablet) {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  // 3. Use it to align the ::before pseudo element
+
+  display: grid;
+  place-content: center;
+
+  &::before {
+    content: "";
+    width: 1.4rem;
+    height: 1.4rem;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    // box-shadow: inset 1em 1em red;
+    background-image: url("/images/icon-check.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: -2;
+
+    border-radius: 50%;
+  }
+
+  &:checked::before {
+    transform: scale(1) !important;
+  }
+
+  &:checked {
+    // background-color: rgba(red, $alpha: 0.3);
+    background: $clr-check;
+  }
+}

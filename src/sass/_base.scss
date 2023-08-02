@@ -1,0 +1,118 @@
+$fw-bold: 700;
+$fw-regural: 400;
+
+$fs-heading: 2rem;
+$fs-md: 1.4rem;
+
+$fs-sm: 1.2rem;
+
+$ff-primary: "Josefin Sans", sans-serif;
+
+$clr-blue: hsl(220, 98%, 61%);
+$clr-check: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+// Light mode
+$clr-grey-dark-l: #484b6a;
+$clr-grey-light-1-l: #9394a5;
+$clr-grey-light-2-l: #d2d3db;
+$clr-grey-light-3-l: #e4e5f1;
+$clr-grey-light-5-l: #fafafa;
+
+// Dark mode
+$clr-grey-dark-1-d: #161722;
+$clr-grey-dark-2-d: #25273c;
+$clr-grey-dark-3-d: #393a4c;
+$clr-grey-dark-4-d: #4d5066;
+
+$clr-grey-light-1-d: #777a92;
+$clr-grey-light-2-d: #cacde8;
+$clr-grey-light-3-d: #e4e5f1;
+
+$bp-desktop: 120rem;
+
+$bp-tablet: 48rem;
+
+.bg-task {
+  background-color: #fff;
+
+  &--dark {
+    background-color: $clr-grey-dark-2-d;
+  }
+}
+
+.bg-body {
+  background-color: $clr-grey-light-5-l;
+
+  //   background-image: url("/images/bg-mobile-light.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--dark {
+    background-color: $clr-grey-dark-1-d;
+  }
+}
+
+.container {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+@mixin box {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+}
+
+body {
+  font-family: $ff-primary;
+  position: relative;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.shadow {
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+}
+
+.wrapper {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1.6rem;
+  background-color: #fff;
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.btn-delete {
+  img {
+    width: 1.2rem;
+    height: 1.2rem;
+
+    @media (min-width: $bp-tablet) {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+}
