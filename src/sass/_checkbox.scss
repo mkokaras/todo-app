@@ -17,6 +17,8 @@ input[type="checkbox"] {
   border-radius: 50%;
   transition: 0.2s all;
 
+  z-index: 1;
+
   @media (min-width: $bp-tablet) {
     width: 2.4rem;
     height: 2.4rem;
@@ -26,6 +28,7 @@ input[type="checkbox"] {
 
   display: grid;
   place-content: center;
+  position: relative;
 
   &::before {
     content: "";
@@ -51,5 +54,19 @@ input[type="checkbox"] {
   &:checked {
     // background-color: rgba(red, $alpha: 0.3);
     background: $clr-check;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    margin: -5px;
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(to right, red, orange);
+    scale: 2;
   }
 }

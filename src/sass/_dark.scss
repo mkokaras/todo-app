@@ -10,9 +10,6 @@
   }
 
   .wrapper {
-    border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 1.6rem;
     background-color: $clr-grey-dark-2-d;
   }
 
@@ -44,6 +41,10 @@
 
       color: $clr-grey-dark-4-d;
     }
+  }
+
+  .form-create {
+    background-color: $clr-grey-dark-2-d;
   }
 
   .task-item {

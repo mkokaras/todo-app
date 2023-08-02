@@ -21,6 +21,10 @@ const taskList = document.querySelector(".task-list") as HTMLUListElement;
 
 const taskClearBtn = document.querySelector(".task-clear") as HTMLButtonElement;
 
+const taskCreateBtn = document.querySelector(
+  ".form-create__btn"
+) as HTMLButtonElement;
+
 const filters = document.querySelectorAll(".filter");
 
 const filterAll = document.querySelector(".filter--all") as HTMLButtonElement;
@@ -40,8 +44,6 @@ const modeBtn = document.querySelector(".btn-mode");
 const body = document.querySelector("body");
 
 const modeIcon = document.querySelector(".icon-mode");
-
-const pageBgImg = document.querySelector(".page-bg");
 
 const addTask = function (task: string) {
   const tasks = [...state.tasks];
@@ -195,8 +197,19 @@ const countActiveTasks = function () {
     (activeCount.textContent = activeTasksCount.toString());
 };
 
+taskCreateBtn.addEventListener("click", function (event: any) {
+  event.preventDefault();
+
+  if (taskInput.value === "") return;
+
+  addTask(taskInput.value);
+
+  taskInput.value = "";
+});
+
 taskForm?.addEventListener("keydown", function (event: any) {
   if (event.key === "Enter") {
+    if (taskInput.value === "") return;
     event.preventDefault();
 
     addTask(taskInput.value);
