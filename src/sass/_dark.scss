@@ -9,6 +9,11 @@
     }
   }
 
+  input[type="checkbox"] {
+    color: $clr-grey-dark-4-d;
+    border: 1px solid $clr-grey-dark-4-d !important;
+  }
+
   .wrapper {
     background-color: $clr-grey-dark-2-d;
   }
@@ -45,6 +50,11 @@
 
   .form-create {
     background-color: $clr-grey-dark-2-d;
+
+    &__btn {
+      color: $clr-grey-dark-4-d;
+      border: 1px solid $clr-grey-dark-4-d !important;
+    }
   }
 
   .task-item {

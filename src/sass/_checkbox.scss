@@ -32,24 +32,28 @@ input[type="checkbox"] {
 
   position: relative;
 
-  &:hover {
-    border: none;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    border: 1px solid transparent;
+    background: $clr-check;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border-radius: inherit;
-      border: 1px solid transparent;
-      background: $clr-check;
-      -webkit-mask: linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-      -webkit-mask-composite: destination-out;
-      mask-composite: exclude;
-    }
+    opacity: 0;
+
+    pointer-events: none;
+
+    visibility: hidden;
+
+    transition: 0.2s all;
   }
 
   &::before {
@@ -81,6 +85,18 @@ input[type="checkbox"] {
 
     &::after {
       border: none;
+    }
+  }
+
+  &:hover {
+    border: none;
+
+    &::after {
+      opacity: 1;
+
+      pointer-events: all;
+
+      visibility: visible;
     }
   }
 }
