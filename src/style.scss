@@ -17,10 +17,10 @@ figure {
   background-size: cover;
   background-repeat: no-repeat;
 
-  background-image: url("images/bg-mobile-light.jpg");
+  background-image: url("/images/bg-mobile-light.jpg");
 
   @media (min-width: $bp-desktop) {
-    background-image: url("images/bg-desktop-light.jpg");
+    background-image: url("/images/bg-desktop-light.jpg");
     height: 30rem;
   }
 
