@@ -68,7 +68,7 @@ const addTask = function (task: string) {
   </form>
   <div class="task task-text">${task}</div>
   <button class="btn-delete">
-    <img src="/images/icon-cross.svg" alt="Cross icon" />
+    <img src="/icon-cross.svg" alt="Cross icon" />
   </button>
 </li>`
   );
@@ -263,7 +263,7 @@ modeBtn?.addEventListener("click", function () {
 
     body?.classList.remove("dark-theme");
 
-    modeIcon?.setAttribute("src", "images/icon-moon.svg");
+    modeIcon?.setAttribute("src", "/icon-moon.svg");
 
     // pageBgImg?.setAttribute("src", "images/bg-mobile-light.jpg");
   } else if (state.mode === "light") {
@@ -271,7 +271,7 @@ modeBtn?.addEventListener("click", function () {
 
     body?.classList.add("dark-theme");
 
-    modeIcon?.setAttribute("src", "images/icon-sun.svg");
+    modeIcon?.setAttribute("src", "/icon-sun.svg");
 
     // pageBgImg?.setAttribute("src", "images/bg-mobile-dark.jpg");
   }

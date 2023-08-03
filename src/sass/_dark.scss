@@ -2,10 +2,10 @@
   background-color: $clr-grey-dark-1-d;
 
   figure {
-    background-image: url("/images/bg-mobile-dark.jpg");
+    background-image: url("/bg-mobile-dark.jpg");
 
     @media (min-width: $bp-desktop) {
-      background-image: url("/images/bg-desktop-dark.jpg");
+      background-image: url("/bg-desktop-dark.jpg");
     }
   }
 
