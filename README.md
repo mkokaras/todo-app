@@ -8,7 +8,6 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
@@ -35,13 +34,13 @@ Users should be able to:
 - Toggle light and dark mode
 - **[TODO]**: Drag and drop to reorder items on the list
 
-### Screenshot
+<!-- ### Screenshot
 
 **Dark mode**
 ![](./images/preview-dark.png)
 
 **Light mode**
-![](./images/preview-light.png)
+![](./images/preview-light.png) -->
 
 ### Links
 
