@@ -45,8 +45,8 @@ Users should be able to:
 
 ### Links
 
-- Code: [Github](https://github.com/mkokaras/single-page-design-portfolio)
-- Site: [Github pages](https://mkokaras.github.io/single-page-design-portfolio/)
+- Code: [Github](https://github.com/mkokaras/todo-app)
+- Site: [Github pages](https://mkokaras.github.io/todo-app/)
 
 ## My process
 
