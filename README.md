@@ -38,10 +38,10 @@ Users should be able to:
 ### Screenshot
 
 **Dark mode**
-![](./images/preview-dark.png)
+![](./images/preview-dark.jpg)
 
 **Light mode**
-![](./images/preview-light.png)
+![](./images/preview-light.jpg)
 
 ### Links
 
