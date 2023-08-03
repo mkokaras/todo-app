@@ -13,6 +13,12 @@ let state = {
   counter: 0,
 };
 
+const crossUrl = new URL("/images/icon-cross.svg", import.meta.url).href;
+
+const moonUrl = new URL("/images/icon-moon.svg", import.meta.url).href;
+
+const sunUrl = new URL("/images/icon-sun.svg", import.meta.url).href;
+
 const taskForm = document.querySelector(".form-create") as HTMLFormElement;
 
 const taskInput = document.querySelector("[name='todo']") as HTMLInputElement;
@@ -68,7 +74,7 @@ const addTask = function (task: string) {
   </form>
   <div class="task task-text">${task}</div>
   <button class="btn-delete">
-    <img src="/icon-cross.svg" alt="Cross icon" />
+    <img src="${crossUrl}" alt="Cross icon" />
   </button>
 </li>`
   );
@@ -263,7 +269,7 @@ modeBtn?.addEventListener("click", function () {
 
     body?.classList.remove("dark-theme");
 
-    modeIcon?.setAttribute("src", "/icon-moon.svg");
+    modeIcon?.setAttribute("src", moonUrl);
 
     // pageBgImg?.setAttribute("src", "images/bg-mobile-light.jpg");
   } else if (state.mode === "light") {
@@ -271,7 +277,7 @@ modeBtn?.addEventListener("click", function () {
 
     body?.classList.add("dark-theme");
 
-    modeIcon?.setAttribute("src", "/icon-sun.svg");
+    modeIcon?.setAttribute("src", sunUrl);
 
     // pageBgImg?.setAttribute("src", "images/bg-mobile-dark.jpg");
   }
