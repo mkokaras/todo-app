@@ -26,22 +26,10 @@
 
   &--new {
     // color: $clr-grey-light-1-l;
-
-    &--dark {
-      color: $clr-grey-light-1-d;
-    }
   }
 
   &--complete {
     color: $clr-grey-light-2-l;
-
-    &--dark {
-      color: $clr-grey-dark-4-d;
-    }
-  }
-
-  &--dark {
-    color: $clr-grey-light-2-d;
   }
 }
 
@@ -55,14 +43,6 @@
 
   &:hover {
     color: $clr-grey-dark-l;
-  }
-
-  &--dark {
-    color: $clr-grey-dark-4-d;
-
-    &:hover {
-      color: $clr-grey-light-3-d;
-    }
   }
 
   &--current {
@@ -81,14 +61,6 @@
     color: $clr-grey-dark-l;
   }
 
-  &--dark {
-    color: $clr-grey-dark-4-d;
-
-    &:hover {
-      color: $clr-grey-light-3-d;
-    }
-  }
-
   @media (min-width: $bp-tablet) {
     font-size: 1.4rem;
     letter-spacing: -0.194px;
@@ -99,10 +71,6 @@
   font-weight: $fw-regural;
   letter-spacing: -0.194px;
   color: $clr-grey-light-1-l;
-
-  &--dark {
-    color: $clr-grey-dark-4-d;
-  }
 
   &--md {
     font-size: $fs-md;

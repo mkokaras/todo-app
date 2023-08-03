@@ -28,16 +28,12 @@ $clr-grey-light-1-d: #777a92;
 $clr-grey-light-2-d: #cacde8;
 $clr-grey-light-3-d: #e4e5f1;
 
-$bp-desktop: 120rem;
+$bp-desktop: 75rem;
 
 $bp-tablet: 48rem;
 
 .bg-task {
   background-color: #fff;
-
-  &--dark {
-    background-color: $clr-grey-dark-2-d;
-  }
 }
 
 .bg-body {
@@ -46,10 +42,6 @@ $bp-tablet: 48rem;
   //   background-image: url("/images/bg-mobile-light.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-
-  &--dark {
-    background-color: $clr-grey-dark-1-d;
-  }
 }
 
 .container {
